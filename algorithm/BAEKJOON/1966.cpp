@@ -45,7 +45,7 @@ int main() {
 
 		while (!(h[count] == queue[j].value && queue[j].data == M)) { // 큐의 맨 앞에 있는 문서의 중요도가 가장 높고, 그 문서가 찾던 문서일 때
 
-			if (h[count] == queue[j].value && queue[j].data != M) // 큐의 맨 앞에 있는 문서의 중요도가 가장 높고, 그 문서가 찾던 문서일 때
+			if (h[count] == queue[j].value && queue[j].data != M) // 큐의 맨 앞에 있는 문서의 중요도가 가장 높고, 그 문서가 찾던 문서가 아닐 때
 				count++;
 			else
 				queue.push_back(queue[j]);
